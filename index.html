@@ -1,0 +1,227 @@
+
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="تَمَرُّن: منصة ويب لتتبع اللياقة البدنية وتوليد جدول تمارين أسبوعي مخصص.">
+    <title>تَمَرُّن | منصة تتبع اللياقة والتمارين الشخصية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+    <header class="site-header">
+        <div class="container header-inner">
+            <!-- Image + Image Map: النقر على الشعار ينقل إلى صفحة من نحن -->
+            <div class="logo-map">
+                <img src="logo.svg" width="160" height="80" alt="شعار منصة تَمَرُّن" usemap="#logoMap">
+                <map name="logoMap">
+                    <area shape="rect" coords="0,0,80,80" href="about.html" alt="الدمبل — من نحن" title="تعرّف علينا">
+                    <area shape="rect" coords="80,0,160,80" href="about.html" alt="اسم المنصة — من نحن" title="تعرّف علينا">
+                </map>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="القائمة" aria-expanded="false">☰</button>
+            <nav class="main-nav" id="mainNav" aria-label="القائمة الرئيسية">
+                <ul>
+                    <li><a href="index.html" data-nav="home">الرئيسية</a></li>
+                    <li class="has-sub">
+                        <a href="index.html#idea" aria-haspopup="true">الأقسام ▾</a>
+                        <div class="submenu">
+                            <a href="index.html#idea">فكرة المنصة</a>
+                            <a href="index.html#customize">صمّم جدولك</a>
+                            <a href="index.html#how">كيف تعمل؟</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html" data-nav="about">من نحن</a></li>
+                    <li><a href="login.html" data-nav="login" id="authLink">دخول</a></li>
+                    <li><a class="btn-nav" href="signup.html" data-nav="signup">حساب جديد</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="container hero-grid">
+                <article>
+                    <span class="eyebrow">مدرّبك الشخصي الرقمي</span>
+                    <h1>توقّف عن العشوائية، وابدأ <span>تَمَرُّنك</span> بخطة تناسبك</h1>
+                    <p>أخبرنا بهدفك ومستواك ووزنك، وستولّد لك المنصة فوراً جدولاً أسبوعياً بالتمارين ومدّتها والسعرات المتوقع حرقها، دون الحاجة لتحديث الصفحة.</p>
+                    <div class="hero-actions">
+                        <a class="btn" href="#customize">صمّم جدولك الآن</a>
+                        <a class="btn btn-outline" href="#idea">اعرف أكثر</a>
+                    </div>
+                </article>
+                <div class="hero-visual">
+                    <div class="hero-glow" aria-hidden="true"></div>
+                    <img id="heroImg" class="hero-img" src="hero-fit.svg" alt="اللياقة العامة" width="400" height="300">
+                    <span id="heroBadge" class="hero-badge">🎯 اختر هدفك لتتغير الصورة</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="block" id="idea">
+            <div class="container">
+                <h2>فكرة المنصة وفائدتها</h2>
+                <p class="section-sub">كثيرون يبدؤون الرياضة بحماس ثم يتوقفون لأنهم لا يعرفون ماذا يتمرنون ولا كم. تَمَرُّن يحل ذلك بخطة واضحة.</p>
+                <div class="cards">
+                    <article class="card">
+                        <span class="ico">🎯</span>
+                        <h3>خطة مخصصة</h3>
+                        <p>جدول أسبوعي يتغير حسب هدفك (حرق دهون، بناء عضلات، لياقة عامة) ومستوى خبرتك.</p>
+                    </article>
+                    <article class="card">
+                        <span class="ico">🔥</span>
+                        <h3>حساب السعرات</h3>
+                        <p>تقدير السعرات المحروقة لكل يوم وللأسبوع كاملاً بناءً على وزنك ومدة التمرين.</p>
+                    </article>
+                    <article class="card">
+                        <span class="ico">💡</span>
+                        <h3>نصائح عملية</h3>
+                        <p>قائمة نصائح تتغير مع هدفك لتحصل على أفضل نتيجة من الجدول.</p>
+                        <ul>
+                            <li>إحماء قبل كل تمرين</li>
+                            <li>ماء كافٍ</li>
+                            <li>نوم منتظم</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="block band">
+            <div class="container">
+                <p id="quoteBox" class="quote-box" style="color:#fff;font-size:1.5rem">“الخطوة الأولى هي الأصعب… ابدأ اليوم.”</p>
+            </div>
+        </section>
+
+        <section class="block" id="customize">
+            <div class="container">
+                <h2>صمّم جدولك</h2>
+                <p class="section-sub">املأ البيانات التالية ثم اضغط «ولّد الجدول».</p>
+                <div class="card form-card">
+                    <form id="planForm" novalidate>
+                        <div class="row">
+                            <div class="field">
+                                <label for="userName">الاسم (اختياري)</label>
+                                <input type="text" id="userName" placeholder="مثال: سارة">
+                                <div class="error-msg"></div>
+                            </div>
+                            <div class="field">
+                                <label for="weight">وزنك بالكيلوجرام</label>
+                                <input type="number" id="weight" placeholder="مثال: 65" min="30" max="250">
+                                <div class="error-msg"></div>
+                            </div>
+                        </div>
+
+                        <fieldset>
+                            <legend>هدفك الأساسي</legend>
+                            <div class="choice-group">
+                                <label><input type="radio" name="goal" value="fat"> 🔥 حرق الدهون</label>
+                                <label><input type="radio" name="goal" value="muscle"> 💪 بناء العضلات</label>
+                                <label><input type="radio" name="goal" value="fit"> ❤️ لياقة عامة</label>
+                            </div>
+                            <div class="error-msg" id="goalError"></div>
+                        </fieldset>
+
+                        <div class="field">
+                            <label for="level">مستوى الخبرة</label>
+                            <select id="level">
+                                <option value="">— اختر —</option>
+                                <option value="beginner">مبتدئ</option>
+                                <option value="intermediate">متوسط</option>
+                                <option value="advanced">متقدم</option>
+                            </select>
+                            <div class="error-msg"></div>
+                        </div>
+
+                        <button class="btn" type="submit">ولّد الجدول</button>
+                        <button class="btn btn-outline" type="reset">مسح</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="block" id="result">
+            <div class="container">
+                <div class="card result-card">
+                    <h2 class="section-title">جدولك الأسبوعي</h2>
+                    <p class="summary-text" id="summaryText"></p>
+                    <div class="stats">
+                        <div class="stat"><strong id="statKcal">0</strong>سعرة أسبوعياً</div>
+                        <div class="stat"><strong id="statMin">0</strong>دقيقة تمرين</div>
+                        <div class="stat"><strong id="statDays">0</strong>أيام نشطة</div>
+                    </div>
+                    <div class="table-wrap">
+                        <table class="plan">
+                            <caption>التمرين المخصص لكل يوم</caption>
+                            <thead>
+                                <tr><th scope="col">اليوم</th><th scope="col">التمرين</th><th scope="col">المدة</th><th scope="col">السعرات</th><th scope="col">الشدة</th></tr>
+                            </thead>
+                            <tbody id="planBody"></tbody>
+                        </table>
+                    </div>
+                    <h3 style="margin-top:20px;color:var(--teal)">أهم النصائح</h3>
+                    <ul class="tips" id="tipsList"></ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="block" id="how">
+            <div class="container">
+                <h2>كيف تعمل المنصة؟</h2>
+                <p class="section-sub">أربع خطوات بسيطة من الفكرة إلى الجدول.</p>
+                <ol class="steps">
+                    <li><strong>اختر هدفك:</strong> حرق الدهون أو بناء العضلات أو اللياقة العامة.</li>
+                    <li><strong>حدّد مستواك ووزنك:</strong> لنضبط مدة التمارين وحساب السعرات.</li>
+                    <li><strong>اضغط «ولّد الجدول»:</strong> تتم المعالجة فوراً في المتصفح.</li>
+                    <li><strong>التزم بالخطة:</strong> وراجع النصائح لتحقيق أفضل نتيجة.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+    <a class="btn to-top" href="#top" aria-label="العودة للأعلى">↑</a>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><h4>تَمَرُّن</h4><p>مدرّبك الرقمي لجدول أسبوعي يناسب هدفك ومستواك.</p></div>
+                <div>
+                    <h4>خريطة الموقع</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="login.html">تسجيل الدخول</a></li>
+                        <li><a href="signup.html">إنشاء حساب</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>تنقّل سريع</h4>
+                    <ul>
+                        <li><a href="index.html#idea">فكرة المنصة</a></li>
+                        <li><a href="index.html#customize">صمّم جدولك</a></li>
+                        <li><a href="index.html#how">كيف تعمل؟</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copy">© <span id="year">2026</span> منصة تَمَرُّن — مقرر CPIS-358 · جامعة الملك عبدالعزيز</p>
+        </div>
+    </footer>
+    <!-- Embedded script: تفعيل رابط الصفحة الحالية وتحديث السنة -->
+    <script>
+                  (function () {
+                    var page = document.body.getAttribute("data-page");
+                    var links = document.querySelectorAll("[data-nav]");
+                    for (var i = 0; i < links.length; i++) {
+                      if (links[i].getAttribute("data-nav") === page) links[i].setAttribute("aria-current", "page");
+                    }
+                      var yearElem = document.getElementById("year");
+                      if (yearElem) {
+                          yearElem.textContent = String(new Date().getFullYear());
+                      }
+    </script>
+    <!-- External script -->
+    <script src="script.js"></script>
+</body>
+</html>
