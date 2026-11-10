@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="حرق الدهون">
-  <rect width="400" height="300" fill="#ffe3d3"/>
-  <circle cx="200" cy="150" r="110" fill="#ffc9a8"/>
-  <path d="M200 50c10 40 60 60 60 120a60 60 0 0 1-120 0c0-30 20-45 30-70 8 18 20 22 30-50z" fill="#ff6a2b"/>
-  <path d="M200 120c6 22 34 34 34 66a34 34 0 0 1-68 0c0-18 12-26 18-40 5 10 12 12 16-26z" fill="#ffb347"/>
-  <text x="200" y="278" text-anchor="middle" font-family="Tajawal, Arial" font-size="22" font-weight="700" fill="#0f3d3e">حرق الدهون</text>
-</svg>
