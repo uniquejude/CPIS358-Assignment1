@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80" width="160" height="80" role="img" aria-label="شعار تَمَرُّن">
+  <rect width="160" height="80" rx="14" fill="#0f3d3e"/>
+  <!-- dumbbell -->
+  <g transform="translate(14 22)" fill="#ff6a2b">
+    <rect x="0" y="8" width="7" height="20" rx="2"/>
+    <rect x="8" y="3" width="8" height="30" rx="2"/>
+    <rect x="16" y="15" width="22" height="6" rx="2" fill="#f4efe6"/>
+    <rect x="38" y="3" width="8" height="30" rx="2"/>
+    <rect x="47" y="8" width="7" height="20" rx="2"/>
+  </g>
+  <text x="146" y="50" text-anchor="end" font-family="Tajawal, Arial, sans-serif" font-size="28" font-weight="800" fill="#f4efe6">تَمَرُّن</text>
+  <path d="M84 60 H146" stroke="#ff6a2b" stroke-width="3" stroke-linecap="round"/>
+</svg>
